@@ -2,6 +2,15 @@
 
 By design, it is better not to add [parcel](https://parceljs.org/) to your app as a dependency.
 
+This image is _optimized_ for production, it basically makes you reduce the size of the image you have to download and let you skip the step of installing parcel.
+
+Other images:
+
+* [dmitryrck/ruby](https://github.com/dmitryrck/ruby-ci), Ruby, Nodejs, and Parcel, size: 4.0GB
+* [node](https://hub.docker.com/_/node), official docker image for Nodejs, no Parcel installed, size: 1.8GB
+* [node:alpine](https://hub.docker.com/_/node), official docker image for Nodejs using Alpine Linux, no Parcel installed, size: **111M**
+* This image, uses `node:alpine` to install Parcel, size: **213M**
+
 # Running
 
 Install the dependencies of your app:
