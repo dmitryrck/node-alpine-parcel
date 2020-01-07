@@ -41,6 +41,18 @@ $ docker run --rm \
   parcel build src/index.html --public-url /static -d /app/public/static
 ```
 
+Debuging your app
+
+```shell
+$ docker run --rm \
+  -v $(pwd):/app -w /app -v node_modules:/app/node_modules \
+  dmitryrck/node-alpine-parcel \
+  -it \
+  sh
+```
+
+It will leave you in a shell within your app. Remember that anything you does there outside `/app` will be deleted when you type `exit`.
+
 # Building
 
 In production, you can install and build your app with one command:
