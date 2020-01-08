@@ -41,7 +41,7 @@ $ docker run --rm \
   parcel build src/index.html --public-url /static -d /app/public/static
 ```
 
-Debuging your app
+Debuging your app:
 
 ```shell
 $ docker run --rm \
@@ -51,7 +51,7 @@ $ docker run --rm \
   sh
 ```
 
-It will leave you in a shell within your app. Remember that anything you does there outside `/app` will be deleted when you type `exit`.
+It will leave you in a shell within `/app` (binding for your app). Remember that anything you do there outside `/app` will be deleted when you type `exit`.
 
 # Building
 
