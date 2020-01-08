@@ -6,10 +6,12 @@ This image is _optimized_ for production, it basically makes you reduce the size
 
 Other images:
 
-* [dmitryrck/ruby](https://github.com/dmitryrck/ruby-ci), Ruby, Nodejs, and Parcel, size: 4.0GB
-* [node](https://hub.docker.com/_/node), official docker image for Nodejs, no Parcel installed, size: 1.8GB
-* [node:alpine](https://hub.docker.com/_/node), official docker image for Nodejs using Alpine Linux, no Parcel installed, size: **111M**
-* This image, uses `node:alpine` to install Parcel, size: **213M**
+| Image | Features | Parcel Installed? | Size |
+| ----- | -------- | ----------------- | ---- |
+| [dmitryrck/ruby](https://github.com/dmitryrck/ruby-ci) | Ruby, Nodejs, Google Chrome, and Parcel | 🗸 | 4.0GB |
+| [node](https://hub.docker.com/_/node) | Official docker image for Nodejs, no Parcel installed | × | 1.8GB |
+| [node:alpine](https://hub.docker.com/_/node) | Official docker image for Nodejs using Alpine Linux no Parcel installed | × | 111M |
+| This image | Uses `node:alpine` to install Parcel | 🗸 | 213M |
 
 # Running
 
